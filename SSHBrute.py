@@ -15,7 +15,7 @@ def checker(host,user,password,port):
 parser=argparse.ArgumentParser()
 parser.add_argument("host",help="provide host IP address")
 parser.add_argument("-u","--username",help="provide the username")
-parser.add_argument("-P","--passwordfile",help="provide the filename that contains passwords")
+parser.add_argument("-P","--passwordfile",help="Provide a file containing a list of passwords")
 parser.add_argument("-p","--port",help="provide the port number (default is 22)")
 args=parser.parse_args()
 if args.port:
